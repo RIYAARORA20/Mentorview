@@ -32,8 +32,9 @@ td{
     width: 20px;
     margin-right: 5px;
 }
-.second p{
+.second label{
     width: auto;
+    margin: auto;
 }
 
 .btn{

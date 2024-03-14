@@ -55,12 +55,12 @@ const StudentTable = () => {
                         <p>Filter:</p>
                     </span>
                     <span className='second'>
-                        <input type='checkbox'></input>
-                        <p>Evaluated</p>
+                        <input type='checkbox' id='ev'></input>
+                        <label for='ev'>Evaluated</label>
                     </span>
                     <span className='second'>
-                        <input type='checkbox'></input>
-                        <p>Not Evaluated</p>
+                        <input type='checkbox' id='nv'></input>
+                        <label for="nv">Not Evaluated</label>
                     </span>
                 </div>
                 <table className="table">
@@ -90,7 +90,7 @@ const StudentTable = () => {
                                 </td>
                                 <td>{item.Name}</td>
                                 <td>{item.Rollno}</td>
-                                <td>bjs</td>
+                                <td>{(item.Viva && item.Execution && item.Idea)?"Done":"Pending"}</td>
                             </tr>
                         ))}
                     </tbody>
