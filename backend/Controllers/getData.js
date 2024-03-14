@@ -151,13 +151,10 @@ import Student from "../models/Studentlist.js";
 const getData = async(req, res)=>{
     try{
         const response = await Student.find();
-        // for (const item of data) {
-        //     await Student.create({ Name: item.name, Rollno: item.rollNo });
-        // }
         res.status(200).json({
+            response,
             success: true,
             message: "data fetched Successfully",
-            isVerifiedCompletely: true,
           });
     }catch(error){
         console.log("ERROR: While fetching data", error);

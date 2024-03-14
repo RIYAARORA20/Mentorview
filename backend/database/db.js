@@ -8,7 +8,7 @@ const PASSWORD = process.env.DB_PASSWORD;
 
 const Connection = () => {
 
-    const MONGODB_URI=`mongodb+srv://${USERNAME}:${PASSWORD}@cluster0.7regngk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/RIYA`
+    const MONGODB_URI=`mongodb+srv://${USERNAME}:${PASSWORD}@cluster0.7regngk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
 
     mongoose.connect(MONGODB_URI, { useNewUrlParser: true})
 

@@ -1,12 +1,33 @@
-import React from 'react';
+import React, { useEffect,useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import axios from 'axios';
+import {useNavigate} from 'react-router-dom';
 import "./table.css";
 
 
-const Evaluation = ({data}) => {
+const Evaluation = () => {
+    const navigation = useNavigate();
+    const location = useLocation();
+    const {students} = location.state;
+    const [data, setData] = useState([]);
+    const [marks, setMarks] = useState([]);
+    useEffect(() => {
+        axios.post("http://localhost:8000/edit",{
+            selected: students
+        })
+            .then((res) => {
+                setData(res.data.response);
+                setMarks(res.data.response);
+                console.log(res);
+            })
+            .catch((error) => {
+                console.error('Error fetching data:', error);
+            });
+    }, []);
   return (
     <div>
       <h1>Evaluation Sheet</h1>
-    <table class="table">
+    <table className="table">
             <thead>
                 <tr>
                     <th scope="col">Name</th>
@@ -19,12 +40,12 @@ const Evaluation = ({data}) => {
             </thead>
             <tbody id="tbody">
                 {data.map((item)=>(
-                    <tr key={item.rollNo}>
-                    <td>{item.name}</td>
-                    <td>{item.rollNo}</td>
-                    <td>{item.idea}</td>
-                    <td>{item.execution}</td>
-                    <td>{item.viva}</td>
+                    <tr key={item.Rollno}>
+                    <td>{item.Name}</td>
+                    <td>{item.Rollno}</td>
+                    <td>{(item.Idea)?(item.Idea):(<input type='number' onChange={(e)=>{setMarks(...marks,)}}></input>)}</td>
+                    <td>{(item.Execution)?(item.Execution):(<input type='number'></input>)}</td>
+                    <td>{(item.Viva)?(item.Viva):(<input type='number'></input>)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -32,8 +53,10 @@ const Evaluation = ({data}) => {
             <br />
             <div className='btn-1'>
               <button type='onClick' className='btn'>Submit</button>
-              <button type='onClick' className='btn'>Reselect</button>
-            </div>
+              {/* <Link to="/" state={{students:students}}> */}
+                <button type='onClick' onClick={()=>navigation(-1)} className='btn'>Reselect</button>
+                {/* </Link> */}
+              </div>
           </div>
         );
       }
