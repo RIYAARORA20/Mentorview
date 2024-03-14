@@ -1,0 +1,47 @@
+h1{
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.heading{
+    background-color: blue;
+    height: 50px;
+    
+}
+th{
+    height: 50px;
+    width: 500px;
+    font-size: 22px;
+}
+td{
+    text-align: center;
+    justify-content: space-between;
+    width: 500px;
+}
+.tick{
+    text-align: left;
+}
+.first{
+    display: flex;
+}
+.second{
+    display: flex;
+    margin-right: 20px;
+}
+.second input{
+    width: 20px;
+    margin-right: 5px;
+}
+.second p{
+    width: auto;
+}
+
+.btn{
+    background-color: lightgreen;
+}
+.btn-1{
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    justify-content: center;
+}
