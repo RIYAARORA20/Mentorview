@@ -148,6 +148,7 @@ import Student from "../models/Studentlist.js";
 //         "idea": 10
 //       }
 //   ];
+
 const getData = async(req, res)=>{
     try{
         const response = await Student.find();

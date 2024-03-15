@@ -39,6 +39,12 @@ td{
     display: flex;
     margin-right: 20px;
     font-size: 18px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.con{
+  margin-top: 22px;
 }
 .second input{
     width: 20px;
@@ -123,6 +129,22 @@ input[type=number]{
     /* max:"10"; */
 
 }
-@media screen and (max-width:800px ){
-    
+
+@media screen and (max-width:695px ){
+  .heading{
+    font-size: 15px;
+    padding-top: -10px;
+    text-wrap: nowrap;
+  }
+    .container{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .second{
+      margin-top: 10px;
+    }
+    .con{
+      margin-top: 20px;
+    }
 }

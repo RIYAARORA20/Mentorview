@@ -1,150 +1,90 @@
 [
     {
-      "name": "John Doe",
-      "rollNo": 1,
-      "viva": 90,
-      "execution": 10,
-      "idea": 10
+      "name": "Manav Gupta",
+      "rollNo": 1
+
+
+
     },
     {
-      "name": "Jane Smith",
-      "rollNo": 2,
-      "viva": 85,
-      "execution": 10,
-      "idea": 10
+      "name": "Mukul Kumar",
+      "rollNo": 2
     },
     {
-      "name": "Alice Johnson",
-      "rollNo": 3,
-      "viva": 95,
-      "executionIdea": 10,
-      "idea": 10
+      "name": "Riya Arora",
+      "rollNo": 3
     },
     {
         "name": "Rahul",
-        "rollNo": 4,
-        "viva": 90,
-        "execution": 10,
-        "idea": 10
+        "rollNo": 4
       },
       {
-        "name": "cxyz",
-        "rollNo": 5,
-        "viva": 85,
-        "execution": 10,
-        "idea": 10
+        "name": "Rishav Garg",
+        "rollNo": 5
       },
       {
-        "name": "ojj",
-        "rollNo": 6,
-        "viva": 95,
-        "executionIdea": 10,
-        "idea": 10
+        "name": "Ojass",
+        "rollNo": 6
       },
       {
-        "name": "John Doe",
-        "rollNo": 7,
-        "viva": 90,
-        "execution": 10,
-        "idea": 10
+        "name": "Muskan",
+        "rollNo": 7
       },
       {
-        "name": "Jane Smith",
-        "rollNo": 8,
-        "viva": 85,
-        "execution": 10,
-        "idea": 10
+        "name": "Mehak",
+        "rollNo": 8
       },
       {
-        "name": "Alice Johnson",
-        "rollNo": 9,
-        "viva": 95,
-        "executionIdea": 10,
-        "idea": 10
+        "name": "Naveen",
+        "rollNo": 9
       },
       {
-        "name": "John Doe",
-        "rollNo": 10,
-        "viva": 90,
-        "execution": 10,
-        "idea": 10
+        "name": "Akshit",
+        "rollNo": 10
       },
       {
-        "name": "Jane Smith",
-        "rollNo": 11,
-        "viva": 85,
-        "execution": 10,
-        "idea": 10
+        "name": "Naman",
+        "rollNo": 11
       },
       {
-        "name": "Alice Johnson",
-        "rollNo": 12,
-        "viva": 95,
-        "executionIdea": 10,
-        "idea": 10
+        "name": "Rakshit",
+        "rollNo": 12
       },
       {
-        "name": "John Doe",
-        "rollNo": 13,
-        "viva": 90,
-        "execution": 10,
-        "idea": 10
+        "name": "Kamal",
+        "rollNo": 13
       },
       {
-        "name": "Jane Smith",
-        "rollNo": 14,
-        "viva": 85,
-        "execution": 10,
-        "idea": 10
+        "name": "Ritik",
+        "rollNo": 14
       },
       {
-        "name": "Alice Johnson",
-        "rollNo": 15,
-        "viva": 95,
-        "executionIdea": 10,
-        "idea": 10
+        "name": "Bharat",
+        "rollNo": 15
       },
       {
-        "name": "John Doe",
-        "rollNo": 16,
-        "viva": 90,
-        "execution": 10,
-        "idea": 10
+        "name": "Harshit",
+        "rollNo": 16
       },
       {
-        "name": "Jane Smith",
-        "rollNo": 17,
-        "viva": 85,
-        "execution": 10,
-        "idea": 10
+        "name": "Ashish",
+        "rollNo": 17
       },
       {
-        "name": "Alice Johnson",
-        "rollNo": 18,
-        "viva": 95,
-        "executionIdea": 10,
-        "idea": 10
+        "name": "Prachi",
+        "rollNo": 18
       },
       {
-        "name": "John Doe",
-        "rollNo": 19,
-        "viva": 90,
-        "execution": 10,
-        "idea": 10
+        "name": "Amit",
+        "rollNo": 19
       },
       {
-        "name": "Jane Smith",
-        "rollNo": 20,
-        "viva": 85,
-        "execution": 10,
-        "idea": 10
+        "name": "Parth",
+        "rollNo": 20
       },
       {
-        "name": "Alice Johnson",
-        "rollNo": 21,
-        "viva": 95,
-        "executionIdea": 10,
-        "idea": 10
+        "name": "Mehvish",
+        "rollNo": 21
       }
   ]
   

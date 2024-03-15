@@ -140,8 +140,14 @@ const Evaluation = () => {
           onClick={(e) => {
             e.preventDefault();
             let alerted = false; 
+            
             marks.forEach((item) => {
-
+              if((!item.Evaluation ||!item.Viva ||!item.Rollno)){
+                if(!alerted){
+                alert("Please enter the values");
+                alerted =true;
+                }
+              }
               if ((item.Execution > 10) || (item.Viva > 10) || (item.Idea > 10)) {
                   if (!alerted) {
                     alert("Please upload value less than 10");
@@ -149,8 +155,9 @@ const Evaluation = () => {
                   }
               }
               else {
-                upload();
-                navigation("/");
+                
+                if (!alerted) {navigation("/");
+                upload();}
               }
             }
             );

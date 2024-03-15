@@ -89,7 +89,8 @@ const StudentTable = () => {
   };
   return (
     <>
-      <div>
+      <div >
+        <div className="container">
         <div className="heading">
           <h1>LIST OF STUDENTS</h1>
         </div>
@@ -111,7 +112,7 @@ const StudentTable = () => {
   </span> */}
           <label>
             <select
-              className="second"
+              className="con"
               onChange={(e) => {
                 const val = e.target.value;
                 setType(val);
@@ -122,6 +123,7 @@ const StudentTable = () => {
               <option value="Not Evaluated">Not Evaluated</option>
             </select>
           </label>
+        </div>
         </div>
         <table className="table">
           <thead>

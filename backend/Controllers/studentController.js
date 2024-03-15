@@ -1,7 +1,11 @@
 import Student from "../models/Studentlist.js";
+
 const getData2 = async(req, res)=>{
     try {
-        const {selected} = req.body;
+      // data.map(async (item)=>{
+        // await Student.create({Name:item.name,Rollno:item.rollNo})
+      // })
+       const {selected} = req.body;
         const response = await Student.find({Rollno:{$in: selected}});
         res.status(200).json({
             response,
