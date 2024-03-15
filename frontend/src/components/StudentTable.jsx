@@ -38,6 +38,10 @@ const StudentTable = () => {
       const students= response.data.response;
       console.log(students); 
 
+      const receiverMail = prompt("Enter receiver's mail"); 
+      const mailResponse = await axios.post("http://localhost:8000/mail", { receiverMail }); 
+      alert(`${mailResponse.data}. Generating PDF`); 
+
       printJS({
         printable: students,
         properties: ['Name', 'Rollno', 'Execution', 'Idea', 'Viva'],
