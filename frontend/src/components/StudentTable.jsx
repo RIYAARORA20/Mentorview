@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./table.css";
 import axios from "axios";
+import printJS from 'print-js'
 import { Link, useNavigate } from "react-router-dom";
 
 const StudentTable = () => {
