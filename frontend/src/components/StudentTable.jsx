@@ -14,7 +14,7 @@ const StudentTable = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/get")
+      .get(process.env.REACT_APP_API_URL + "/get")
       .then((res) => {
         setData(res.data.response);
         setCData(res.data.response);
@@ -34,12 +34,12 @@ const StudentTable = () => {
       alert("Please update pending fields");
     } else {
       //alert("Data Submitted  Successfully!");
-      const response = await axios.get("http://localhost:8000/get");
+      const response = await axios.get(process.env.REACT_APP_API_URL + "/get");
       const students= response.data.response;
       console.log(students); 
 
       const receiverMail = prompt("Enter receiver's mail"); 
-      const mailResponse = await axios.post("http://localhost:8000/mail", { receiverMail }); 
+      const mailResponse = await axios.post(process.env.REACT_APP_API_URL + "/mail", { receiverMail }); 
       alert(`${mailResponse.data}. Generating PDF`); 
 
       printJS({

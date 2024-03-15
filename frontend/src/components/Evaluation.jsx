@@ -14,7 +14,7 @@ const Evaluation = () => {
   const [marks, setMarks] = useState([]);
   useEffect(() => {
     axios
-      .post("http://localhost:8000/edit", {
+      .post(process.env.REACT_APP_API_URL + "/edit", {
         selected: students,
       })
       .then((res) => {
@@ -30,7 +30,7 @@ const Evaluation = () => {
     console.log({marks}); 
     console.log("MARKS: "); 
     axios
-      .post("http://localhost:8000/submit", {
+      .post(process.env.REACT_APP_API_URL + "/submit", {
         updated: marks,
       })
       .then((res) => {
