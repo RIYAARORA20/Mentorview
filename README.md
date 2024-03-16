@@ -36,8 +36,5 @@ To run the project locally:
 
 ![Screenshot 2024-03-16 113255](https://github.com/RIYAARORA20/Mentorview/assets/101398148/cfad465e-a530-49d5-bd49-c0e547b09e88)
 
-
-## Contact
-
-For any inquiries or feedback, please contact [your@email.com](mailto:your@email.com).
+![Screenshot 2024-03-16 113522](https://github.com/RIYAARORA20/Mentorview/assets/101398148/3bdffecc-da03-4bb7-9676-fd75a99a61d3)
 
