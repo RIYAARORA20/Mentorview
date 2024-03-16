@@ -32,9 +32,10 @@ To run the project locally:
 
 
 
-## License
+## snap
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+![Screenshot 2024-03-16 113255](https://github.com/RIYAARORA20/Mentorview/assets/101398148/cfad465e-a530-49d5-bd49-c0e547b09e88)
+
 
 ## Contact
 
